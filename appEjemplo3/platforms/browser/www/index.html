@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+<!--     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
+    	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="theme-color" content="#0000FF">
+      <meta name="msapplication-navbutton-color" content="#0000FF">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#0000FF">
+      <link rel="stylesheet" type="text/css" href="./css/boot.css"/>
+	<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script> 
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+      <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+      <link href="./css/navbar-fixed-top.css" rel="stylesheet"> -->
+    
+
+    
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="theme-color" content="#0000FF">
+      <meta name="msapplication-navbutton-color" content="#0000FF">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#0000FF">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/boot.css"/>
+      
+      <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+      <link rel="stylesheet" href="./css/navbar-fixed-top.css">
+      
+       <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+    
+    
+    
+    
+    
+    <title>Hello World</title>
+</head>
+
+<body class="container-fluid">
+    <div class="app">
+    </div>
+
+       
+      <nav class="navbar navbar-default degradado navbar-fixed-top navbar-md">
+         <div class="container">
+            <div >
+               <button type="button" class="navbar-toggle sidebar-toggle left-menu-bar-btn "> 
+	               <span class="icon-bar">
+	               </span> 
+	               <span class="icon-bar">
+	               </span> 
+	               <span class="icon-bar">
+	               </span> 
+               </button> 
+               <a href="allsearch.html" class="transition "> 
+					<!--<button type="button" class="navbar-toggle search-btn-onclick"> 
+               			<span class="glyphicon glyphicon-search">
+               			</span> 
+               		</button>  -->
+               		<button type="button" onclick="location.href='index.html'" class="btn alinear_derecha fondo_transparente color_blanco  "><i class="fa fa-question-circle-o fa-2x"></i></button>
+               		<button type="button" onclick="location.href='index.html'" class="btn alinear_derecha fondo_transparente color_blanco  "><img src="img/trophy.png" alt="trophies"  width="30"></button>
+               		
+               </a> 
+               <span class="navbar-brand " href="#">
+               		<!-- <img src="img/brand.svg" class="img-responsive logo"/> --> 
+               		<p>CONMIGO </p>
+               </span> 
+               <div class="dropdown pull-right"> </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+               <ul class="nav navbar-nav"> </ul>
+            </div>
+         </div>
+      </nav>
+      <div class="sidebar-overlay"></div>
+      <aside id="sidebar" class="sidebar sidebar-default sidebar-fixed-left" role="navigation">
+         <div> 
+         	 <!-- <img src="img/brand-black.svg" class="img-responsive left-logo"/>  -->
+             <h1>Santander</h1> 
+         </div>
+         <ul class="nav sidebar-nav">
+            <li> <a href="index_menu2.html" class="transition"> 
+               <span class="glyphicon glyphicon-user">
+               </span>&nbsp; About Us </a> 
+            </li>
+            <li> <a href="#" data-toggle="modal" data-target="#contact"> 
+               <span class="glyphicon glyphicon-earphone">
+               </span>&nbsp; Contact Us </a> 
+            </li>
+            <li class="divider"></li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-list-alt">
+               </span>&nbsp; Tutorials<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="t1.html" class="transition">Introduction</a></li>
+                  <li><a href="t2.html" class="transition">Basic Syntax</a></li>
+                  <li><a href="t3.html" class="transition">Static Keywords</a></li>
+                  <li><a href="t4.html" class="transition">Header File</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-pencil">
+               </span>&nbsp; Programs<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="patterns.html" class="transition">Pattern Programs</a></li>
+                  <li><a href="sprlist.html" class="transition">String Programs</a></li>
+               </ul>
+            </li>
+            <li class="dropdown">
+               <a class="ripple-effect dropdown-toggle" href="#" data-toggle="dropdown">
+               <span class="glyphicon glyphicon-question-sign">
+               </span>&nbsp; Quizes<b class="caret"></b></a> 
+               <ul class="dropdown-menu ac-act-dropdown-menu">
+                  <li><a href="cplus-quiz.html" class="transition">Practice Quiz 1</a></li>
+               </ul>
+            </li>
+         </ul>
+      </aside>
+      
+      
+      <br> 
+      
+      
+<!--  html transition from one page to another
+https://css-tricks.com/add-page-transitions-css-smoothstate-js/
+
+
+w3school:  http://www.w3schools.com/jquerymobile/tryit.asp?filename=tryjqmob_trans_reverse
+
+ -->
+
+			<div>
+				<h2 class="titulo2">Your issues</h2>
+
+				<br> 
+			
+				<div class="row">
+					<div class="col-sm-3 col-xs-3 col-xs-offset-1">
+						<span class="fa-stack fa-lg color_azul"> 
+							<i class="fa fa-circle-thin fa-stack-2x "></i> 
+							<i class="fa fa-calendar fa-stack-1x"></i>
+						</span>	
+					</div>	
+					<div class="col-sm-8 col-xs-8">					
+						<p> FRIDAY - JANUARY 29 TH, 2016 </p>
+					</div>
+				</div>
+				<br> 
+			</div>
+
+			<div class="panel-group container-fluid" id="accordion">			
+                    <div class="panel panel-default arrow_box margen_izquierdo " data-toggle="collapse" data-parent="#accordion" href="#collapse1">                
+
+<!-- 						<div class="row">
+							<div class="col-sm-8 col-xs-8 col-xs-offset-1">
+								<p class="negrita">Branches</p>
+			                    <h5 class="letra2">ADVERTISING - DAMAGED ADVERTISING</h5>
+							</div>
+							<div class="col-sm-2 col-xs-2">
+								<button type="button" class="btn btn-info btn-circle"><i class="glyphicon glyphicon-chevron-down"></i></button>
+							</div>
+						</div> -->
+						<table class="table">
+                            <tr>
+                                <th>
+                                	<p class="letra1_negrita">Branches</p>
+                                	<h5 class="letra2">ADVERTISING - DAMAGED ADVERTISING</h5>
+                                </th>
+                                <th><button type="button" class="btn btn-info btn-circle alinear_derecha"><i class="glyphicon glyphicon-chevron-down"></i></button></th>
+                                
+                            </tr>
+                        </table>
+
+						<div id="collapse1" class="panel-collapse collapse collapse">
+                            <div class="panel-body fondo_verde">
+                            
+                            <p class="letra_blanca"> <span class="fa fa-check-circle-o fa-2x derecha color_blanco" aria-hidden="true"></span> TRANSACTION APPROVED</p>
+                            
+								
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default arrow_box margen_izquierdo " data-toggle="collapse" data-parent="#accordion" href="#collapse2">                
+                        <table class="table">
+                            <tr>
+                                <th>
+                                	<p class="letra1_negrita">Online banking</p>
+                                	<h5 class="letra2">NO ACCESs</h5>
+                                </th>
+                                <th><button type="button" class="btn btn-info btn-circle alinear_derecha"><i class="glyphicon glyphicon-chevron-down"></i></button></th>
+                                
+                            </tr>
+                        </table>
+                        
+                        <div id="collapse2" class="panel-collapse collapse collapse">
+                            <div class="panel-body fondo_verde">
+                            
+                            <p class="letra_blanca"> <span class="fa fa-check-circle-o fa-2x derecha color_blanco" aria-hidden="true"></span> TRANSACTION APPROVED</p>
+                            
+								
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="panel panel-default arrow_box margen_izquierdo " data-toggle="collapse" data-parent="#accordion" href="#collapse3">                
+                        <table class="table">
+                            <tr>
+                                <th>
+                                	<p class="letra1_negrita">Online banking</p>
+                                	<h5 class="letra2">ERROR MESSAGE</h5>
+                                </th>
+                                <th><button type="button" class="btn btn-info btn-circle alinear_derecha"><i class="glyphicon glyphicon-chevron-down"></i></button></th>
+                                
+                            </tr>
+                        </table>
+                        
+                        <div id="collapse3" class="panel-collapse collapse collapse">
+                            <div class="panel-body fondo_verde">                           
+                            <p class="letra_blanca"> <span class="fa fa-check-circle-o fa-2x derecha color_blanco" aria-hidden="true"></span> TRANSACTION APPROVED</p>                            								
+                            </div>
+                        </div>
+                    </div>
+                    
+            </div>
+
+
+
+
+
+
+	<div >
+		<div class="row" style="margin-top: 15px;">
+			<!-- Nav tabs -->
+			<div class="text-center degradado">
+
+				<h3 class="letra_blanca pading_arriba">New issue</h3>
+				<button type="button" class="btn degradado2 btn-lg btn-block"
+					onclick="location.href='setUp.html'">
+					<table class="table table-borderless">
+						<tr>
+							<th><span
+								class="fa fa-home fa-3x derecha color_verde_grisaceo"
+								aria-hidden="true"></span></th>
+							</th>
+							<th>
+								<div class="centrar_texto">
+									<p class="letra_blanca">SET UP</p>
+									<p class="letra_pequena letra_blanca">BRANCHES | ATM</p>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</button>
+				<br> <br>
+				<button type="button" class="btn degradado2 btn-lg btn-block"
+					onclick="llamadaServicioIp()">
+					<table class="table table-borderless">
+						<tr>
+							<th><span class="fa fa-mobile fa-3x color_verde_grisaceo"
+								aria-hidden="true"></span></th>
+							<th>
+								<div class="centrar_texto">
+									<p class="letra_blanca">CALL IP SERVICE</p>
+									<p class="letra_pequena letra_blanca">Devuelve script</p>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</button>
+				<br> <br>
+				<button type="button" class="btn degradado2 btn-lg btn-block"
+					onclick="llamadaServicioFake()">
+					<table class="table table-borderless">
+						<tr>
+							<th><span
+								class="fa fa-lightbulb-o fa-3x color_verde_grisaceo"
+								aria-hidden="true"></span></th>
+							<th>
+								<div class="centrar_texto">
+									<p class="letra_blanca">CALL SERVICE FAKE POST</p>
+									<p class="letra_pequena letra_blanca">Devuelve un JSON</p>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</button>
+				<br> <br>
+				<button class="btn degradado2 btn-lg btn-block"
+					onclick="llamadaServicioHora()">
+					<table class="table table-borderless">
+						<tr>
+							<th><span
+								class="fa fa-lightbulb-o fa-3x color_verde_grisaceo"
+								aria-hidden="true"></span></th>
+							<th>
+								<div class="centrar_texto">
+									<p class="letra_blanca">CALL DATE SERVICE</p>
+									<p class="letra_pequena letra_blanca">Devuelve JSON</p>
+								</div>
+							</th>
+						</tr>
+					</table>
+				</button>
+				<br> <br>
+
+			</div>
+		</div>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/custom.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+    <script type="text/javascript" src="cordova.js"></script>  
+     
+    <script type="text/javascript" src="js/index.js"></script> 
+    <script type="text/javascript" src="js/callJSON.js"></script> 
+     
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>

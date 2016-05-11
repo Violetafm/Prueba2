@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2016 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!-- Good default declaration:
+    * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
+    * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
+    * Disables use of eval() and inline scripts in order to mitigate risk of XSS vulnerabilities. To change this:
+        * Enable inline JS: add 'unsafe-inline' to default-src
+        * Enable eval(): add 'unsafe-eval' to default-src
+    * Create your own at http://cspisawesome.com
+    -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
+
+<!--     <link rel="stylesheet" type="text/css" href="css/index.css" />
+    	<link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+    		<link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
+    	
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="theme-color" content="#0000FF">
+      <meta name="msapplication-navbutton-color" content="#0000FF">
+      <meta name="apple-mobile-web-app-status-bar-style" content="#0000FF">
+      <link rel="stylesheet" type="text/css" href="./css/boot.css"/>
+	<script src="http://s.codepen.io/assets/libs/modernizr.js" type="text/javascript"></script> 
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+      <link rel="stylesheet" type="text/css" href="./css/style.css"/>
+      <link href="./css/navbar-fixed-top.css" rel="stylesheet"> -->
+    
+
+    
+       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	  <link rel="stylesheet" href="css/animate.css"> 
+      <link rel="stylesheet" href="bootstrap-3.3.6-dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="font-awesome-4.6.2/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="./css/boot.css"/>      
+       <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
+    
+    
+    
+    
+    
+    <title>Hello World</title>
+</head>
+
+<body class="container-fluid">
+    <div class="app">
+    </div>
+    
+ <div class="animated fadeInLeft"> 
+               	
+   	<div class="container-fluid row fondo_rojo">
+		 <a href="index.html">             	
+               			<div class="row col-xs-offset-3 margen_arriba3 margen_abajo">
+               			<p class="col-sm-1 col-xs-1 letra_blanca col-xs-offset-7 col-sm-offset-8"> Cancel </p>
+               			<span class="fa fa-times fa-2x col-sm-1 col-xs-1 col-xs-offset-1 color_blanco"></span> 
+               			</div>             		
+          </a> 
+	</div>            	
+
+
+      
+	<div class="container-fluid row degradado">
+		<div class="col-sm-2 col-xs-2 col-xs-offset-1 margen_arriba3 margen_abajo">
+			<span class="fa-stack fa-lg  fa-3x"> 
+				<i class="fa fa-circle fa-stack-2x color_blanco"></i> 
+				<i class="fa fa-home fa-stack-1x color_rojo"></i>
+			</span>
+		</div>
+		<div class="col-sm-8 col-xs-8 margen_arriba2">
+			<h2 class="letra_blanca alinear_izquierda col-xs-offset-3">Setup</h2>
+		</div>
+	</div>
+
+
+
+	<!--bocadillo de texto html:     http://codepen.io/Seba951/pen/HkFly -->
+
+	<div>
+		<h2 class="centrar_texto">What kind of issue is?</h2>
+		<br>
+	</div>
+
+
+	<div class="container">
+			  <!-- <h2>Collapsible Panel</h2> -->
+			  <div class="panel-group">
+			    <div class="panel panel-default">
+			      <div class="panel-heading" type="button" >
+			        <div class="row">
+			          <p class="col-sm-9 col-xs-9 col-xs-offset-1">Content errors</p>
+			          <button type="button" class="btn  btn-circle fondo_transparente color_rojo col-sm-2 col-xs-2"><i class="fa fa-chevron-right"></i></button>
+			        </div>		        
+			      </div>
+			    </div>
+			    
+			    <div class="panel panel-default">
+			      <div class="panel-heading" type="button" onclick="location.href='spellingMistakes.html'">
+			        <div class="row">
+			          <p class="col-sm-9 col-xs-9 col-xs-offset-1">Spelling mistakes</p>
+			          <button type="button" class="btn  btn-circle fondo_transparente color_rojo col-sm-2 col-xs-2"><i class="fa fa-chevron-right"></i></button>
+			        </div>		        
+			      </div>
+			    </div>
+			    
+			    <div class="panel panel-default">
+			      <div class="panel-heading" type="button" >
+			        <div class="row">
+			          <p class="col-sm-9 col-xs-9 col-xs-offset-1">Outdated advertising</p>
+			          <button type="button" class="btn  btn-circle fondo_transparente color_rojo col-sm-2 col-xs-2"><i class="fa fa-chevron-right"></i></button>
+			        </div>		        
+			      </div>
+			    </div>
+			    
+			    <div class="panel panel-default">
+			      <div class="panel-heading" type="button" >
+			        <div class="row">
+			          <p class="col-sm-9 col-xs-9 col-xs-offset-1">Damaged advertising</p>
+			          <button type="button" class="btn  btn-circle fondo_transparente color_rojo col-sm-2 col-xs-2"><i class="fa fa-chevron-right"></i></button>
+			        </div>		        
+			      </div>
+			    </div>
+			    
+			  </div>
+	</div>
+	
+</div>	
+
+<!--  	<div class="container-fluid row navbar navbar-fixed-bottom fondo_gris">
+		<a href="branches.html" id="back">
+			<div class="row margen_arriba4 color_negro">
+				<span class="fa fa-chevron-left fa-2x col-sm-1 col-xs-1 "></span>
+				<p class="col-sm-1 col-xs-1 "> BACK</p>
+			</div>
+		</a>
+	</div>  -->
+	
+		<br> <br>  
+	<div class="container-fluid row navbar navbar-fixed-bottom fondo_gris">
+		<a href="branches.html">
+			<div class=" margen_arriba4 color_negro">
+				<span class="fa fa-chevron-left fa-2x col-sm-1 col-xs-1 "></span>
+				<p class="col-sm-1 col-xs-1 "> BACK</p>
+			</div>
+		</a>
+	</div> 
+
+
+
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+    <script src="js/custom.js"></script>
+     <script type="text/javascript" src="js/bootstrap.min.js"></script>   
+    <script type="text/javascript" src="cordova.js"></script>   
+    <script type="text/javascript" src="js/index.js"></script> 
+     
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+</body>
+
+</html>
